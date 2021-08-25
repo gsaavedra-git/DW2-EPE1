@@ -1,49 +1,77 @@
-.navbar-custom {
-	background-color:#1b0088;
-    color:#ffffff;
+:root{
+  --cPrimario: #1b0088;
+  --cPrim2: #2c0cac;
+  --cSecundario: #ffffff;
+}
+
+.btn-primary{
+  background-color: var(--cPrimario);
+}
+.btn-primary:hover,
+.btn-primary:link,
+.btn-primary:focus{
+  background-color: var(--cPrim2);
+}
+
+ .navbar-custom {
+	background-color: var(--cPrimario);
+    color:var(--cSecundario);
   	border-radius:0;
     margin-bottom: 0px;
 }
   
-.navbar-custom .navbar-nav > li > a {
-  	color:#fff;
+ .navbar-custom .navbar-nav > a {
+  	color:var(--cSecundario);
 }
 
 .navbar-custom .navbar-nav > .active > a {
-    color: #ffffff;
-	background-color:#b1a4e2;
+    color: var(--cSecundario);
+	background-color: var(--cPrim2);
 }
       
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > a:hover,
+.navbar-custom .navbar-nav > a:focus,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus,
 .navbar-custom .navbar-nav > .open >a {
-    text-decoration: none;
-    background-color: #433288;
+    text-decoration:underline;
+    background-color:var(--cPrim2);
 }
      
 .navbar-custom .navbar-brand {
-  	color:#eeeeee;
+  	color:var(--cSecundario);
 }
-.navbar-custom .navbar-toggle {
-  	background-color:#eeeeee;
-}
-.navbar-custom .icon-bar {
-  	background-color:#b1a4e2;
-}
-footer {
-    background-color: #1b0088;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    padding: auto;
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  background-color: var(--cSecundario);
   }
 
-  .jumbotron {
-    background-image:url(/resources/img/banner.png);
-    background-size: cover;
-    color: #ffffff;
-  }
+.fa-bars {
+  color: var(--cPrimario);
+}
+
+.navbar-custom .icon-bar {
+  	background-color:var(--cPrim2);
+} 
+
+.jumbotron {
+  background-image:url(/resources/img/banner.png);
+  background-size: cover;
+  font-family: fantasy;
+}
+
+.card > img {
+  border: 3px solid var(--cPrimario);
+  border-radius: 4px;
+  padding: 5px;
+  height: 280px;
+}
+
+footer {
+  background-color: var(--cPrim2);
+}
+
+div.text-center.p-3{
+  background-color:var(--cPrimario);
+}
