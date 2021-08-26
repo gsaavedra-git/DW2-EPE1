@@ -10,6 +10,7 @@ function load(url, element)
     req.send(null);    
     element.innerHTML = req.responseText; 
 }
+
 //mecanica de paginación
 function redirect(page) {    
     if(page === 'inicio'){
@@ -19,5 +20,10 @@ function redirect(page) {
     else if (page === 'destinos'){
         load("pages/destinos.html",document.getElementById("pages"));
         $('.navbar-collapse').collapse('hide')
+    }
+    else if (page === 'hoteles'){
+        load("pages/hoteles.html",document.getElementById("pages"));
+        $('.navbar-collapse').collapse('hide')
+        $('')
     }
 }
