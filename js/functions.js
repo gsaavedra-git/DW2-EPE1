@@ -26,4 +26,9 @@ function redirect(page) {
         $('.navbar-collapse').collapse('hide')
         $('')
     }
+    else if (page === 'centrodeayuda'){
+        load("pages/centrodeayuda.html",document.getElementById("pages"));
+        $('.navbar-collapse').collapse('hide')
+        $('')
+    }
 }

@@ -1,6 +1,6 @@
 :root{
   --cPrimario: #1b0088;
-  --cPrim2: #2c0cac;
+  --cPrim2: #380fdd;
   --cSecundario: #ffffff;
   --cSec2:rgb(250, 250, 250);
 }
@@ -8,6 +8,12 @@
 .btn-primary{
   background-color: var(--cPrimario);
 }
+
+.bg-primary{
+  background-color: var(--cPrim2) !important;
+  color: var(--cSecundario);
+}
+
 .btn-primary:hover,
 .btn-primary:link,
 .btn-primary:focus{
