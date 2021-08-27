@@ -20,6 +20,11 @@
   background-color: var(--cPrim2);
 }
 
+#pages {
+  min-height:100vh;/*importante*/
+  position:relative;/*importante*/
+} 
+
  .navbar-custom {
 	background-color: var(--cPrimario);
     color:var(--cSecundario);

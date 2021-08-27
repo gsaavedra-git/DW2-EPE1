@@ -13,22 +13,6 @@ function load(url, element)
 
 //mecanica de paginación
 function redirect(page) {    
-    if(page === 'inicio'){
-        load("pages/inicio.html",document.getElementById("pages"));
-        $('.navbar-collapse').collapse('hide')
-    }
-    else if (page === 'destinos'){
-        load("pages/destinos.html",document.getElementById("pages"));
-        $('.navbar-collapse').collapse('hide')
-    }
-    else if (page === 'hoteles'){
-        load("pages/hoteles.html",document.getElementById("pages"));
-        $('.navbar-collapse').collapse('hide')
-        $('')
-    }
-    else if (page === 'centrodeayuda'){
-        load("pages/centrodeayuda.html",document.getElementById("pages"));
-        $('.navbar-collapse').collapse('hide')
-        $('')
-    }
+    load(`pages/${page}.html`,document.getElementById("pages"))
+    $('.navbar-collapse').collapse('hide')
 }
